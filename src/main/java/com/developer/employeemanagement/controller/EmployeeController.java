@@ -16,6 +16,7 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
+    @GetMapping
     public List<EmployeeEntity> findAllEmployee() {
         return employeeService.findAllEmployee();
     }
