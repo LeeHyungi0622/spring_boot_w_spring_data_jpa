@@ -3,6 +3,7 @@ package com.developer.employeemanagement.service.impl;
 import com.developer.employeemanagement.entity.EmployeeEntity;
 import com.developer.employeemanagement.repository.EmployeeRepository;
 import com.developer.employeemanagement.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,6 +14,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     private final EmployeeRepository employeeRepository;
 
+    @Autowired
     public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
     }
