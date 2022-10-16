@@ -2,13 +2,13 @@ package com.developer.employeemanagement.controller;
 
 import com.developer.employeemanagement.entity.EmployeeEntity;
 import com.developer.employeemanagement.service.EmployeeService;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/employee")
 public class EmployeeController {
     private final EmployeeService employeeService;
 
