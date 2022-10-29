@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/employee")
 public class EmployeeController {
     private final EmployeeService employeeService;
 
@@ -17,6 +18,7 @@ public class EmployeeController {
     }
 
     @GetMapping
+    @ResponseBody
     public List<EmployeeEntity> findAllEmployee() {
         return employeeService.findAllEmployee();
     }

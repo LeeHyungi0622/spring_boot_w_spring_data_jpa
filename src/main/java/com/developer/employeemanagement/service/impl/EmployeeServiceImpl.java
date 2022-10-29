@@ -23,7 +23,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<EmployeeEntity> findAllEmployee() {
-       return employeeMapper.getAllEmployeeInfo();
+//       return employeeMapper.getAllEmployeeInfo();
+        return employeeRepository.findAll();
     }
 
     @Override
